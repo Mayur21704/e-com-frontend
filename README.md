@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+
+
+
+## VITE_FIREBASE_LINK_FORUSER=https://console.firebase.google.com/u/0/project/ecommerce-335e7/authentication/users
+## VITE_MONGODATABSE_LINK=https://cloud.mongodb.com/v2#/org/66347414a5250a46503e7d6f/projects
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
