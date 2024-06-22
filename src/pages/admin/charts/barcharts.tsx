@@ -9,19 +9,18 @@ import { getLastMonths } from "../../../utils/feature";
 
 const { last12Months, last6Months } = getLastMonths();
 
-
 const Barcharts = () => {
   const { user } = useSelector((state: RootState) => state.userReducer);
 
-  const { isLoading, data, error, isError } = useBarQuery(user?._id!);
+  const { isLoading, data, isError } = useBarQuery(user?._id!);
 
   const products = data?.charts.products || [];
   const orders = data?.charts.orders || [];
   const users = data?.charts.users || [];
 
-    if (isError) {
-      return <Navigate to={"/admin/dashboard"} />;
-    }
+  if (isError) {
+    return <Navigate to={"/admin/dashboard"} />;
+  }
 
   return (
     <div className="admin-container">
